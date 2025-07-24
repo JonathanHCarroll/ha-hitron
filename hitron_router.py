@@ -4,6 +4,8 @@ import json
 from urllib.parse import urlunparse
 from getpass import getpass
 from argparse import ArgumentParser
+# JHC
+# 2025-07-24
 
 parser = ArgumentParser("Hitron router API, API version 1.11, Software Version 7.1.1.32")
 parser.add_argument("-u", "--username", type=str, default="cusadmin")
