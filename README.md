@@ -1,6 +1,6 @@
 # ha-hitron
 
-A Python utility for interacting with Hitron router APIs (API version 1.11, Software Version 7.1.1.32+). This tool allows you to query system information, check router version, and perform actions such as rebooting the router via command-line.
+A Home Assistant integration for interacting with Hitron router APIs (API version 1.11, Software Version 7.1.1.32+). This tool allows you to query system information, check router version, and perform actions such as rebooting the router via command-line.
 
 ## Features
 - Query router system information
