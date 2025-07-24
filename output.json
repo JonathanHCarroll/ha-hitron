@@ -1,0 +1,43 @@
+{
+  "errCode": "000",
+  "errMsg": "",
+  "deviceId": "90:AA:C3:B5:91:70",
+  "modelName": "CODA-4589-CGO",
+  "vendorName": "Hitron Technologies",
+  "SerialNum": "252211004066",
+  "HwVersion": "1A",
+  "ApiVersion": "1.12.1",
+  "SoftwareVersion": "7.2.4.5.1b8",
+  "GuiStyle": "other",
+  "webType": "CODA-4582-RES",
+  "ssidRepeat": "1",
+  "wifiChip": "qca",
+  "DeploymentName": "COGECO",
+  "Model": "CODA-4589-CGO (1A)",
+  "sysTime": "2025-07-23 20:35:37",
+  "tz": "7_1_0",
+  "lanName": "brlan0",
+  "privLanIP": "192.168.0.1/24",
+  "lanRx": "5.8G Bytes",
+  "lanTx": "15.76G Bytes",
+  "wanName": "erouter0",
+  "wanIP": [
+    "24.122.180.83",
+    "2001:18c0:1000:1:98d0:ad7e:4a73:ef55"
+  ],
+  "wanRx": "15.78G Bytes",
+  "wanRxPkts": "15421475",
+  "wanTx": "5.81G Bytes",
+  "wanTxPkts": "8311618",
+  "dns": [
+    "209.15.165.152",
+    "2001:18c0:ffe0:28::2"
+  ],
+  "rfMac": "90:AA:C3:B5:91:70",
+  "secDNS": "209.15.165.153",
+  "systemLanUptime": "45971",
+  "systemWanUptime": "45720",
+  "routerMode": "Dualstack",
+  "lanAsWanMode": "0",
+  "onDST": "false"
+}

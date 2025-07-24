@@ -1,0 +1,22 @@
+{
+  "title": "Hitron Modem",
+  "config": {
+    "step": {
+      "user": {
+        "title": "Connect to Hitron Modem",
+        "description": "Enter connection details to your Hitron modem.",
+        "data": {
+          "host": "Host",
+          "username": "Username",
+          "password": "Password"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Unable to connect to the modem"
+    },
+    "abort": {
+      "already_configured": "Modem is already configured"
+    }
+  }
+}

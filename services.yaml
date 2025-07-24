@@ -1,0 +1,3 @@
+reboot:
+  name: Reboot Modem
+  description: Reboots the Hitron modem

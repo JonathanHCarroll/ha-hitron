@@ -1,0 +1,10 @@
+{
+  "component.hitron.config.title": "Hitron Modem",
+  "component.hitron.config.step.user.title": "Connect to Hitron Modem",
+  "component.hitron.config.step.user.description": "Enter your Hitron modem connection details.",
+  "component.hitron.config.step.user.data.host": "Host",
+  "component.hitron.config.step.user.data.username": "Username",
+  "component.hitron.config.step.user.data.password": "Password",
+  "component.hitron.config.error.cannot_connect": "Unable to connect",
+  "component.hitron.config.abort.already_configured": "Modem already configured"
+}
