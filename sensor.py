@@ -30,7 +30,8 @@ async def async_setup_entry(hass, entry, async_add_entities):
 
     sensors = [
         HitronSensor(coordinator, "Uptime", "uptime", "mdi:clock-outline"),
-        HitronSensor(coordinator, "Signal Strength", "signal_strength", "mdi:wifi"),
+        HitronSensor(coordinator, "WAN IP", "wanIP", "mdi:wifi"),
+        HitronSensor(coordinator, "Software Version", "software_version", "mdi:wifi"),
         HitronSensor(coordinator, "Connected", "connected", "mdi:lan-connect"),
     ]
 
