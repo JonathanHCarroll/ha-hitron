@@ -1,7 +1,6 @@
 from homeassistant.components.sensor import SensorEntity
 from homeassistant.helpers.update_coordinator import CoordinatorEntity, DataUpdateCoordinator, UpdateFailed
-from homeassistant.const import SIGNAL_STRENGTH_DECIBELS_MILLIWATT, DEVICE_CLASS_SIGNAL_STRENGTH
-
+from datetime import timedelta
 from .const import DOMAIN
 import logging
 import asyncio
@@ -14,16 +13,17 @@ async def async_setup_entry(hass, entry, async_add_entities):
 
     async def async_update_data():
         try:
-            return await hass.async_add_executor_job(client.get_status)
+            data = await hass.async_add_executor_job(client.get_status)
+            _LOGGER.debug(f"Hitron get_status() returned: {data}")
+            return data
         except Exception as err:
             raise UpdateFailed(f"Error communicating with Hitron modem: {err}")
-
     coordinator = DataUpdateCoordinator(
         hass,
         _LOGGER,
         name="hitron modem",
         update_method=async_update_data,
-        update_interval=60,  # seconds
+        update_interval=timedelta(seconds=60),
     )
 
     await coordinator.async_config_entry_first_refresh()
@@ -44,7 +44,10 @@ class HitronSensor(CoordinatorEntity, SensorEntity):
         self._key = key
         self._attr_icon = icon
         self._attr_unique_id = f"hitron_{key}"
-
+        if key == "signal_strength":
+            self._attr_device_class = "signal_strength"
+            self._attr_unit_of_measurement = "dBm"
+    
     @property
     def native_value(self):
         return self.coordinator.data.get(self._key)
