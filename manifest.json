@@ -1,12 +1,13 @@
 {
   "domain": "hitron",
   "name": "Hitron Modem",
-  "version": "1.0.0",
-  "documentation": "https://github.com/yourname/hitron",
+  "version": "1.0.3",
+  "documentation": "https://github.com/jonathanhcarroll/ha-hitron",
   "requirements": [],
-  "codeowners": ["@yourgithubhandle"],
   "dependencies": [],
   "iot_class": "local_polling",
   "config_flow": true,
-  "issue_tracker": "https://github.com/yourname/hitron/issues"
+  "issue_tracker": "https://github.com/jonathanhcarroll/ha-hitron/issues",
+  "codeowners": ["@jonathanhcarroll"],
+  "icon": "icon.png"
 }
