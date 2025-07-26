@@ -11,4 +11,4 @@ class HitronRebootButton(ButtonEntity):
         self.client = client
 
     async def async_press(self):
-        await hass.async_add_executor_job(self.client.reboot)
+        await self.hass.async_add_executor_job(self.client.reboot)
